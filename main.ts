@@ -1,9 +1,15 @@
-input.onButtonPressed(Button.A, function () {
-    cuteBot.moveTime(cuteBot.Direction.forward, 75, 5)
-    basic.pause(1000)
-    cuteBot.moveTime(cuteBot.Direction.forward, 100, 5)
-    basic.pause(1000)
-})
-basic.forever(function () {
-	
-})
+let i
+input.buttonIsPressed(Button.A)
+while (true) {
+    i = [cuteBot.tracking(cuteBot.TrackingState.L_R_line)]
+   /* if (i == 10) {
+        cuteBot.motors(10, 50)
+    }
+    
+    if (i == 01) {
+        cuteBot.motors(50, 10)
+    }
+    
+    if (i == 11) {
+        cuteBot.motors(25, 25)
+    }*/
